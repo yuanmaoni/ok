@@ -1,0 +1,34 @@
+@charset "utf-8";
+/*--====================================
+　　　ＣＳＳでテーブルを装飾する
+--====================================*/
+.boxa{
+    margin: 30px auto;
+    width:600px;
+}
+.boxa table {
+    border: 3px darkblue solid;  
+       /* 太さ3pxで濃い青の実線 */
+    border-collapse: collapse;
+    background: lightyellow;
+       /*全体の背景色*/
+}
+.boxa table th {
+    font-size: 20px;
+    padding: 20px;
+       /*上下左右20pxずつの余白を造る*/
+    background: yellow;
+       /*見出しの背景色*/
+    color: darkblue;
+    border: solid 1px black;
+       /*実線 1px 黒*/
+}
+.boxa table td {
+    font-weight: bold;
+    padding: 6px 20px;
+       /*上下6pxで左右20pxの余白を造る*/
+    color: royalblue;
+       /*テーブル内のすべての文字をroyalblueに変える*/
+    border: solid 1px black;
+       /*実線 1px 黒*/
+}
