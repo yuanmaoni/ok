@@ -1,0 +1,75 @@
+----------------Git 分支使用手順  命令篇
+
+
+為了保持本地main(master)資料為最新版，所以先pull
+$ git pull
+
+
+↓↓↓↓↓↓↓↓↓↓
+
+建立本地分支chami
+$ git branch 分支名   (分支名自定義)
+
+
+↓↓↓↓↓↓↓↓↓↓
+
+確認分支是否建立成功
+$ git branch
+前面有 * 的就是現在所在的分支
+
+
+↓↓↓↓↓↓↓↓↓↓
+
+切換到chami分支
+$ git checkout 分支名  (想切換到的分支名)
+
+
+↓↓↓↓↓↓↓↓↓↓
+
+確認分支是否切換成功
+$ git branch
+前面有 * 的就是現在所在的分支
+
+
+↓↓↓↓↓↓↓↓↓↓
+
+在chami分支修改內容
+
+↓↓↓↓↓↓↓↓↓↓
+
+切回main(master)分支
+$ git checkout master
+
+
+↓↓↓↓↓↓↓↓↓↓
+
+合併分支merge from chami
+$ git merge chami
+
+
+↓↓↓↓↓↓↓↓↓↓
+
+刪除分支chami remove branch(就在合併分支完的視窗上的左下角)
+$ git branch -d chami
+
+
+↓↓↓↓↓↓↓↓↓↓
+
+在commit前要先add
+$ git add .    (輸入"."代表將所有檔案add)
+
+
+↓↓↓↓↓↓↓↓↓↓
+
+commit到本地倉庫
+$ git commit -m"輸入message"   (message內容自定義)
+
+
+為了保持本地main(master)資料為最新版，所以先pull
+$ git pull
+
+↓↓↓↓↓↓↓↓↓↓
+
+push到遠端
+$ git push
+
